@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #eeeeee;
+        }
+
+        .ui.vertical.menu {
+            width: auto !important;
+        }
+
+        /* Hide element on Desktop */
+        @media only screen and (min-width: 981px) {
+            .hide-desktop {
+                display: none !important;
+            }
+
+            #contentDash {
+                margin-left: 215px;
+            }
+        }
+
+        /* Hide element on Tablet/Phone */
+        @media only screen and (max-width: 980px) {
+            .hide-mobile {
+                display: none !important;
+            }
+
+            #content {
+                width: 100% !important;
+                margin: 0 auto;
+                padding-top: 10px !important;
+            }
+
+            .ui.dividing.header {
+                text-align: center;
+              padding-bottom: 10px;
+            }
+
+            
+
+            .ui.link.card {
+                margin: 0 auto;
+            }
+
+            #tombolMenu {
+                padding-left: 10px;
+                padding-top: 25px;
+            }
+
+        }
+
+        .sidebar {
+            background-color: #f0f0f0;
+            padding: 30px;
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="ui left fixed vertical sidebar menu hide-desktop">
+        <h2>Imam Firmansyah</h2>
+
+        <div style="font-size: 13pt; margin-top: 70px">
+
+            <p>Hello, <br> this is my portofolio <br>for mobile apps i ever made. </p>
+            <p>Thank you</p>
+        </div>
+
+    
+        
+    
+    
+    </div>
+
+
+    <div class="ui grid">
+        <div class="six wide column hide-mobile " style="padding-top: 80px; padding-left: 90px;">
+
+            <h2>Imam Firmansyah</h2>
+
+            <div style="font-size: 13pt; margin-top: 70px">
+
+                <p>Hello, <br> this is my portofolio <br>for mobile apps i ever made. </p>
+                <p>Thank you</p>
+            </div>
+
+        </div>
+
+
+        <div class="eight wide column" style="padding-top: 40px" id="content">
+
+            <span class="view-ui item hide-desktop" id="tombolMenu" style="float:left">
+                <i class="bars icon" style="font-size: 20px ;"></i> 
+        
+                
+            </span>
+            <h3 class="ui dividing header">
+                Portofolio
+            </h3>
+
+
+            <div class="ui link cards">
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/mhealth_1.jpeg" style="height: 505px ;">
+                    </div>
+                    <div class="content">
+                        <div class="header">m-Health</div>
+                        <div class="description">
+                            Aplikasi untuk mendata ibu hamil yang terdeteksi HIV
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/mpai.jpeg">
+                    </div>
+                    <div class="content">
+                        <div class="header">mPAI</div>
+
+                        <div class="description">
+                            Aplikasi media pembelajaran Agama Islam
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/absen.jpeg" style="height: 505px ;">
+                    </div>
+                    <div class="content">
+                        <div class="header">Absen</div>
+
+                        <div class="description">
+                            Absen Masuk dan Pulang dengan scan QR-Code
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/stric.jpeg" style="height: 505px ;">
+                    </div>
+                    <div class="content">
+                        <div class="header">STRIC</div>
+                        <div class="description">
+                            Aplikasi mobile untuk deteksi stroke
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script>
+
+
+
+   
+
+
+
+$("#tombolMenu").click(function() {
+$('.sidebar')
+.sidebar('toggle')
+;
+});
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
