@@ -45,31 +45,28 @@
                 padding-top: 10px !important;
             }
 
-            .ui.dividing.header {
-              padding-bottom: 20px;
-             text-align: center;
-             clear: left;
-              
-            }
-
-            
-
             .ui.link.card {
                 margin: 0 auto;
             }
+            .ui.header {
+                text-align: center;
+                width: 230px;
+            }
 
             #tombolMenu {
-                padding-left: 30px;
-                float: left;
-                padding-top: 20px;
+                margin-left: 30px;
+                margin-top: 30px;
+            }
 
+            #headerPorto {
+                padding-top: 44px;
             }
 
 
         }
 
-        .ui.left.fixed.ui.vertical.menu {
-            background-color: #a4a0a0;       
+        .ui.left.ui.vertical.menu {
+            background-color: #a4a0a0;
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 80px;
@@ -80,18 +77,12 @@
 <body>
 
 
-    <div class="ui left fixed vertical sidebar menu hide-desktop">
+    <div class="ui left vertical sidebar menu hide-desktop">
         <h2>Imam Firmansyah</h2>
-
-        <div style="font-size: 13pt; margin-top: 0px">
+        <div style="font-size: 13pt">
             <p>Hello, <br> this is my portofolio <br>for mobile apps i ever made. </p>
             <p>Thank you</p>
         </div>
-
-    
-        
-    
-    
     </div>
 
 
@@ -110,13 +101,24 @@
 
 
         <div class="eight wide column" style="padding-top: 40px" id="content">
+            <div class="ui grid hide-desktop">
+                <div class="four wide column">
+                    <i class="bars icon hide-desktop" style="font-size: 20px ;" id="tombolMenu"></i>
+                </div>
 
-            <div class="hide-desktop" id="tombolMenu">
-                <i class="bars icon" style="font-size: 20px ;"></i> 
+                <div class="twelve wide column" id="headerPorto">
+                    <h3 class="ui header">
+                        Portofolio
+                    </h3>
+                </div>
             </div>
-            <h3 class="ui dividing header">
-                Portofolio
-            </h3>
+            <div class="ui divider hide-desktop"></div>
+
+
+            <div class="ui dividing header hide-mobile">
+                <h3>Portofolio</h3>
+            </div>
+
 
 
             <div class="ui link cards">
@@ -171,8 +173,8 @@
             </div>
         </div>
 
-
     </div>
+
 
 
 
@@ -181,15 +183,15 @@
 
 
 
-   
 
 
 
-$("#tombolMenu").click(function() {
-$('.sidebar')
-.sidebar('toggle')
-;
-});
+
+        $("#tombolMenu").click(function () {
+            $('.sidebar')
+                .sidebar('toggle')
+                ;
+        });
 
 
 
